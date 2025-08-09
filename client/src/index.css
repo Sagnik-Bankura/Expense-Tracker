@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  /* This now points to your local image in the public folder */
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
