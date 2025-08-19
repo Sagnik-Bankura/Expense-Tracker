@@ -13,7 +13,12 @@ const app = express();
 
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [ "https://real-time-chat-app-c45p.vercel.app"],
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
 
 app.use('/api/v1/users', require('./routes/userRoute'));
 
