@@ -5,7 +5,6 @@ import moment from "moment";
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title, PointElement, LineElement);
 
-// Set default colors for charts to be dark for light background
 ChartJS.defaults.color = '#1f2937'; // Dark gray text
 ChartJS.defaults.borderColor = 'rgba(0, 0, 0, 0.1)';
 
